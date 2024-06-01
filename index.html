@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/icons/t.avif" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/2a65e15ffb.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <P style="margin: 10px 15px;" class="para"><span style="font-size : 60px;color:#ff004f">W</span>elcome to my <span style="color: #ff004f;font-size :60px" >P</span>ortfolio.</P>
+                <ul id="sidemenu">
+                    
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <img src="/icons/x-mark-16.png" alt="" class="menu" onclick="closemenu()">
+                </ul>
+                
+                <img src="/icons/menu1.svg" alt="" class="menu" onclick="openmenu()">
+            </nav>
+            <div class="header-text">
+                <p>Frontend Developer</p>
+                <h1>Hi, I'm <span>Tamilselvan</span><br>from India</h1>
+            </div>
+        </div>
+    </div>  
+
+ <!-- ------------ about ----------- -->
+ <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="/icons/my.jpg" title="Tamilselvan">
+            </div>
+            <div class="about-col-2">
+                <h2 class="sub">About Me</h2>
+                <p class="p">
+                    Hey there! I'm Tamilselvan, a 3rd year  student currently navigating the exciting journey of college life at Kongunadu College of Enginnering and Technology ,Trichy.I'm passionate about ECE, and my academic journey has been a mix of exploration and dedication. From delving into intriguing courses like Web-desining to tackling challenging projects, I love the thrill of expanding my knowledge and honing my skills.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('education')" >Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Front-End Developer</span><br>Designing a Website</li>
+                        <li><span>Python</span><br>Designing a Website and Software</li>
+                        <li><span>C</span><br>Developing a basic programs</li>
+                        <li><span>Editing</span><br>Edit a photos,videos and etc..</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>Currently pursuing B.E Electronics and Communication Engineering in Kongunadu College of Engineering and Technology with 7.52 CGPA.</li>
+                        <li><span>2021</span><br>12th passed out at Government Boys Higher Secondary School Kalapanaickenpatty with 83.2%.</li>
+                        <li><span>2019</span><br>10th passed out at Government Boys Higher Secondary School Kalapanaickenpatty with 84.5%.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ------------ project----------- -->
+ <div id="project">
+    <div class="container">
+        <h1 class="subtitle" style="font-size: 40px;">My Work</h1>
+        <div class="worklist">
+            <div>
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>Smart Voting System</h2>
+                <p>Developing a real-time image-based smart voting system involves advanced technologies and meticulous design. Firstly, a secure user authentication system leveraging biometric data such as facial recognition must be implemented for voter verification. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-computer-mouse"></i>
+                <h2> Virtual Mouse</h2>
+                <p>Controlling a virtual mouse using hand gestures involves utilizing computer vision and gesture recognition technology. Initially, a camera captures the user's hand movements in real-time. Hand gestures, such as swiping left or right, pinching, or waving, are then interpreted by algorithms trained to recognize specific movements. </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-user-tie"></i>
+                <h2>Portfolio Webdesign</h2>
+                <p>A personal portfolio serves as a dynamic representation of an individual's skills, accomplishments, and work. Typically hosted online, it showcases a diverse range of projects, achievements, and experiences in a visually appealing and organized manner.</p>
+                <a href="#" >Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+
+<!-- ------------ contact ----------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p class="pict"><i class="fa-solid fa-paper-plane"></i>tamilselvanss001@gmail.com</p>
+                <p class="pict"><i class="fa-solid fa-phone"></i>+91 9384967315</p>
+                <div class="social-icons">
+                    
+                    <a href="http://twitter.com"><i class="fa-brands fa-square-x-twitter"></i></a>
+                    <a href="http://instagram.com"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/"><i class="fa-brands fa-square-github"></i></a>
+                </div>
+                <a href="Resume" download class="btn">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn ">Submit</button>
+                </form>
+                <span id="control"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>Copyright &copy; by Tamil.</p>
+</div>
+<!----------- script -------->
+<script src="main.js"></script>
+<script src="sidemenu.js"></script>
+<script src="script-url.js"></script>
+</body>
+</html>
