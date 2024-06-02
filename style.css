@@ -86,7 +86,7 @@ nav ul li a:hover::after{
 }
 .about-col-1 img{
     width: 100%;
-    border-radius: 15px;
+    border-radius: 20px;
     height: 80vh;
     
 }
@@ -147,8 +147,6 @@ nav ul li a:hover::after{
     padding: 20px 0;
     
 }
-
-
 .worklist{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
@@ -304,8 +302,9 @@ nav .menu{
         
     }
     .para{
-        font-size: 18px;
-        
+        font-size: 19px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       
     }
     nav .menu{
         display: block;
@@ -338,12 +337,13 @@ nav .menu{
     }
     .about-col-1, .about-col-2{
         flex-basis: 100%;
-    }
-    .about-col-1 img{
+    } 
+     .about-col-1 img{
         padding-top: 20px;
-        border-radius: 20px;
-        padding-bottom: 50px;
-        height: 80vh;
+        border-radius: 30px;
+        padding-bottom: 20px;
+        height: 100%;
+        width: 100%;
     }
     .about-col-1{
         margin-top: -50px;
@@ -352,9 +352,10 @@ nav .menu{
     .about-col-2{
         font-size: 15px;
     }
+    
     .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
+        font-size: 15px;
+        margin-right: 100px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
